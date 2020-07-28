@@ -1,2 +1,2 @@
 # Machine-Learning
-Some cool machine learning projects.
+Here are some of my machine learning projects.
