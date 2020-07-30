@@ -1,3 +1,7 @@
+#import matplotlib.pyplot as plt
+#import os
+#import numpy as np 
+
 
 # DATADIR = "D:/PYTHON_PROJECT/dataset/train"
 # categories = ["NORMAL", "PNEUMONIA"]
