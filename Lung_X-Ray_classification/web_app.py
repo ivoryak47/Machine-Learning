@@ -1,11 +1,9 @@
 from tensorflow.keras.models import load_model
 import streamlit as st
 import numpy as np
-from PIL import Image
-import pickle
-from io import BytesIO
-import cv2
 from keras.preprocessing import image
+from io import BytesIO
+
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 classifier = load_model("classifier.h5")
@@ -13,6 +11,7 @@ classifier = load_model("classifier.h5")
 STYLE = """
 <style>
 img {
+
     max-width: 50%;
 }
 </style>
@@ -45,7 +44,7 @@ else:
         
     if isinstance(file, BytesIO):
         show_file.image(file)
-        # image = Image.open(file)
+       
         test_image = image.load_img(file,target_size = (64,64))
         test_image = image.img_to_array(test_image)
         
